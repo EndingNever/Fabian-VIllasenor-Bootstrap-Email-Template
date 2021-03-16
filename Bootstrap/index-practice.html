@@ -27,23 +27,10 @@
         .container {
             /* border:dashed 2px red; */
             height:100vh;
+            width:100%;
         }
 
-        .email-function {
-            
-            /* border:1px gold dashed; */
-        }
 
-        /* .no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-
-  > .col,
-  > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0;
-  }
-} */
 
         input {
             width:100%;
@@ -67,6 +54,8 @@
            height:100vh;
        }
 
+
+ 
        .emails-list{
             background-color: rgba(76, 0, 130, 0.274);
             /* border: 2px solid #6fff00; */
@@ -76,6 +65,10 @@
             margin-left:3px;
             margin-top:40px;
         }
+        
+        .email-row {
+           height:auto;
+        }
 
         .last-col{
             background-color: #65524d4d;
@@ -84,14 +77,14 @@
 
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
 <!-- ROW 1 -->
     
     <div class="row my-row">
     
                 <!-- COLUMN 1 Nav Bar-->
     
-        <div class="col-2 my-col first-col">
+        <div class="col-1  my-col first-col">
     
                     <h5>Hello!</h5>
     
@@ -103,24 +96,24 @@
                     <p>Sent Mail</p>
                     <p>Drafts</p>
                     <p>Trash</p>
-                </div>
+        </div>
     
                 <!-- COLUMN 2 EMAILS -->
     
-        <div class="col-4 inbox-emails">
+        <div class="col-5 inbox-emails">
     
-                    <p>Emails</p>
-                    <input type = 'search' placeholder="search emails">
+                    <h5>Email</h5>
+                    <input type = 'search' placeholder="Find Email">
               
                 <!-- Col 2 Row 1 Email 1 -->
-                    <div class="row">
+                    <div class="row email-row">
                         <div class="col my-col emails-list">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, quod!</p>
-                        </div>
+                            <h5>Google</h5>
+                            <p>new email from</p>
                     </div>
-               
+                </div>
                 <!-- Col 2 Row 2 Email 2 -->
-                    <div class="row">
+                    <div class="row email-row">
                         <div class="col my-col emails-list">
                             <p>Email 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nam in accusantium itaque? At facere unde eveniet! Architecto, atque nesciunt?
                             </p>
@@ -128,7 +121,7 @@
                    </div>
                
                 <!-- Col 2 Row 3 Email 3 -->
-                    <div class="row">
+                    <div class="row email-row">
                         <div class="col my-col emails-list">
                             <p>Email 3! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt adipisci magnam sed commodi?</p>
                         </div>
@@ -142,7 +135,7 @@
     
                     **Currently Viewed Email**
                 
-                </div>
+        </div>
             
             </div>
 <!-- END ROW 1 -->
