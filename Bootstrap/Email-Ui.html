@@ -103,14 +103,14 @@
 <body>
     <div class="container-fluid">
 <!-- ROW 1 -->
-                        <!-- Make this Row the first row? ->->->->->Then make the Email and Google Cols rows as well                     -->
-    <div class="row my-row">
+                     <!-- Make this Row the first row? ->->->->->Then make the Email and Google Cols rows as well                     -->
+    <div class="row">
     
     <!-- COLUMN 1 Nav Bar-->
     
         <div class="col-1  first-col">
     
-                    <h5>Hello!</h5>
+                    <h4>Hello!</h4>
     
                     <button>Compose</button>
                    
@@ -121,12 +121,15 @@
                     <p>Drafts</p>
                     <p>Trash</p>
         </div>
+
+
+    <!--Row 2 COLUMN 2 EMAILS -->
     
-    <!-- COLUMN 2 EMAILS -->
+
     
         <div class="col-5">
     
-                    <h5>Email</h5>
+                    <h4>Email</h4>
                     <input type = 'search' placeholder="Find Email">
               
     <!-- Col 2 Row 1 Email 1 -->
@@ -152,8 +155,16 @@
                 <!-- Col 2 Row 2 Email 2 -->
                     <div class="row">
                         <div class="col emails-list">
-                            <h5>Lol who dis</h5>
-                            <p>Email 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nam in accusantium itaque? At facere unde eveniet! Architecto, atque nesciunt?
+                            <div class="row justify-content-between">
+                                <div class="col-auto">
+                                    <h5>Dan Carlin's Hardcore History</h5>
+                                </div>
+                                <div class="col-auto">
+                                    <span class="time">3:22am</span>
+                                </div>
+                            </div>
+                            <p class = 'email-text'> Episode 56 - <a href = 'https://www.dancarlin.com/hardcore-history-56-kings-of-kings/'>The King of Kings.</a>
+                                Often relegated to the role of slavish cannon fodder for Sparta’s spears, the Achaemenid Persian empire had a glorious heritage. Under a single king, Cyrus, they created the greatest empire the world had ever seen.
                             </p>
                         </div>
                    </div>
@@ -161,8 +172,15 @@
                 <!-- Col 2 Row 3 Email 3 -->
                     <div class="row email-row">
                         <div class="col emails-list">
-                            <h5>Get A Bigger Benis</h5>
-                            <p>Email 3! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt adipisci magnam sed commodi?</p>
+                            <div class="row justify-content-between">
+                                <div class="col-auto">
+                                    <h5>Cyrus the Great</h5>
+                                </div>
+                                <div class="col-auto">
+                                    <span class="time">5:56pm</span>
+                                </div>
+                            </div>
+                            <p class = 'email-text'>Under his rule, the empire expanded vastly, eventually conquering most of Western Asia and much of Central Asia. He respected the customs and religions of the land he conquered, and established a government that worked to the advantage and profit of its subjects</p>
                         </div>
                     </div>
         </div>
@@ -171,15 +189,16 @@
     
         <div class="col-6 last-col">
     
-                    <h2>Google</h2>
-                    <p>You have receieved a new Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, temporibus!</p>
+                    <h4>Cyrus the Great</h4>
+                    <p></p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Illustrerad_Verldshistoria_band_I_Ill_058.jpg/800px-Illustrerad_Verldshistoria_band_I_Ill_058.jpg" alt="Relief of Cyrus wearing a crown" width='200px;'>
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, sunt eum, saepe quo quasi molestias veniam, eius vel voluptatibus quia dicta necessitatibus. Incidunt soluta debitis tempore perspiciatis. Officiis, ratione voluptatibus!</p>
+                    <p>The details of Cyrus's death are uncertain, with varying accounts throughout history. His burial site is believed to be a limestone tomb, built around 540-530BC. The tomb is located in his former capital city Pasargadae, in modern day Iran.</p>
                 
                     
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label"></label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Type Here"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Reply"></textarea>
                         </div>
                             <form>
                                 <div class="form-group">
@@ -187,10 +206,12 @@
                                     <input type="file" class="form-control-file" id = 'formControl'>
                                 </div>
                             </form>
+                            
             </div>
             
     </div>
 <!-- END ROW 1 -->
     
     </div>
+</body>
 </html>
