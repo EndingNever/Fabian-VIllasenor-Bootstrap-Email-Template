@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-practice!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        body {
+            background-color:#F1FAEE;
+            color:#0b054b;
+            margin:0;
+            /* border:1px solid green; */
+        }
+        
+        button {
+            margin-top:50px;
+        }
+
+
+        .navList {
+            margin-top:120px;
+            /* height:100vh; */
+        }
+
+        .container {
+            /* border:dashed 2px red; */
+            height:100vh;
+            /* width:100%; */
+        }
+
+
+
+        input {
+            width:100%;
+        }
+
+        .first-col{
+            background-color: #457b9d91;
+
+            height:100vh;
+        }
+
+       .my-row {
+           border:2px solid red;
+           /* height:100vh; */
+       }
+
+       .my-col{
+           border:3px dashed green;
+           /* height:100vh; */
+       }
+
+       .text-form{
+        border:3px dashed green;
+        height:50vh;
+       }
+
+
+/* emails in middle column */
+      .emails-list{
+            background-color: rgba(76, 0, 130, 0.274);
+             /* border: 2px solid #6fff00;  */
+            box-shadow:3px 5px rgba(76, 0, 130, 0.664) ;
+            /* width:100%; */
+            /* height:auto; */
+            margin-right:5px;
+            margin-left:3px;
+            margin-top:40px; 
+        } 
+        
+        .email-row {
+           height:auto;
+        }
+
+        .last-col{
+            background-color: #e06ff78e;
+            /* border:2px solid red; */
+        }
+
+        #writingBox {
+            border:1px solid black;
+            height: 300px;
+            margin-top: 200px;
+            margin-left: 50px;
+            width:650px;
+        }
+
+        .email-text {
+         font-size: 80%;  
+        }
+
+        .time {
+            font-style:italic;
+            font-weight: 400;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <div class="container-fluid">
+<!-- ROW 1 -->
+                        <!-- Make this Row the first row? ->->->->->Then make the Email and Google Cols rows as well                     -->
+    <div class="row my-row">
+    
+    <!-- COLUMN 1 Nav Bar-->
+    
+        <div class="col-1  first-col">
+    
+                    <h5>Hello!</h5>
+    
+                    <button>Compose</button>
+                   
+                    <p class = 'navList'>Inbox (1)</p>
+                    <p> Tagged</p>
+                    <p>Important</p>
+                    <p>Sent Mail</p>
+                    <p>Drafts</p>
+                    <p>Trash</p>
+        </div>
+    
+    <!-- COLUMN 2 EMAILS -->
+    
+        <div class="col-5">
+    
+                    <h5>Email</h5>
+                    <input type = 'search' placeholder="Find Email">
+              
+    <!-- Col 2 Row 1 Email 1 -->
+                    <div class="row">
+                        <div class="col emails-list">
+
+ <!--Row separating the email title(extreme left) from the time (extreme right) --> 
+                           
+                            <div class="row justify-content-between">
+                                <div class="col-auto">
+                                    <h5>New email from Joe Mama</h5>
+                                </div>
+                                <div class="col-auto">
+                                    <span class = 'time'>10:00am</span>
+                                </div>
+                            </div>
+            <!-- Email 1 text -->
+                            <p class = 'email-text'>Hello, would you like to be rich beyond your wildest imagination? Do you want to go into a car lot and pick out any car you'd like without worrying about the price?</p>
+                              
+                    </div>
+                </div>
+                
+                <!-- Col 2 Row 2 Email 2 -->
+                    <div class="row">
+                        <div class="col emails-list">
+                            <h5>Lol who dis</h5>
+                            <p>Email 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nam in accusantium itaque? At facere unde eveniet! Architecto, atque nesciunt?
+                            </p>
+                        </div>
+                   </div>
+               
+                <!-- Col 2 Row 3 Email 3 -->
+                    <div class="row email-row">
+                        <div class="col emails-list">
+                            <h5>Get A Bigger Benis</h5>
+                            <p>Email 3! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt adipisci magnam sed commodi?</p>
+                        </div>
+                    </div>
+        </div>
+    
+                <!-- COLUMN 3 Viewed Email -->
+    
+        <div class="col-6 last-col">
+    
+                    <h2>Google</h2>
+                    <p>You have receieved a new Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, temporibus!</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, sunt eum, saepe quo quasi molestias veniam, eius vel voluptatibus quia dicta necessitatibus. Incidunt soluta debitis tempore perspiciatis. Officiis, ratione voluptatibus!</p>
+                
+                    
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label"></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Type Here"></textarea>
+                        </div>
+                            <form>
+                                <div class="form-group">
+                                    <label for="formControl"> </label>
+                                    <input type="file" class="form-control-file" id = 'formControl'>
+                                </div>
+                            </form>
+            </div>
+            
+    </div>
+<!-- END ROW 1 -->
+    
+    </div>
+</html>
