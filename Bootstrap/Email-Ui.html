@@ -9,38 +9,60 @@
     <style>
         body {
             background-color:#F1FAEE;
-            color:#0b054b;
+            color:black;
             margin:0;
             /* border:1px solid green; */
         }
         
-        button {
-            margin-top:50px;
+ 
+
+/* Left Hand Nav Bar */
+        .first-col{
+            background-color: #6d5f4c;
+            color:white;
+
+            /* height:100vh; */
+        }
+    /* Welcome, Fabian! text */
+        .welcome-text {
+            line-height: 10px;
+            font-size:20px;
+        }
+
+        .bold-text {
+            font-weight: 700;
         }
 
 
-        .navList {
-            margin-top:120px;
-            /* height:100vh; */
+        .navList a {
+            color:inherit;
+            text-decoration: none;
+        }
+
+        .button {
+            background-color: #eeb302;
+            border-color: #eeb302;
+            color:#FFF;   
+            margin-top:50px;
         }
 
         .container {
             /* border:dashed 2px red; */
-            height:100vh;
+/* ///////////////////////////////////////////////Delete height???                             /////////////*/       
+            /* height:100vh; */
             /* width:100%; */
         }
 
 
 
-        input {
-            width:100%;
+        ul li {
+            list-style-type: none;
         }
 
-        .first-col{
-            background-color: #457b9d91;
 
-            height:100vh;
-        }
+
+
+
 
        .my-row {
            border:2px solid red;
@@ -58,7 +80,18 @@
        }
 
 
-/* emails in middle column */
+/* Middle column and emails */
+
+       /*Search bar and input form */
+        .form-control, .input-group-text {
+            border:inherit;
+            /* background-color: rgba(255, 255, 255, 0.336); */
+        }
+
+        .mid-col {
+            background-color: #ebe7e293;
+        }
+     
       .emails-list{
             background-color: rgba(76, 0, 130, 0.274);
              /* border: 2px solid #6fff00;  */
@@ -74,8 +107,9 @@
            height:auto;
         }
 
+/* Last column */
         .last-col{
-            background-color: #e06ff78e;
+            background-color: #ffffff;
             /* border:2px solid red; */
         }
 
@@ -97,41 +131,87 @@
         }
 
         
+        
+        .bi{
+            color:white;
+        }
+
+        .email-info{
+            
+        }
+        
+        .email-viewed{
+
+        }
+  
     </style>
 
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid d-flex vh-100">
 <!-- ROW 1 -->
-                     <!-- Make this Row the first row? ->->->->->Then make the Email and Google Cols rows as well                     -->
+                     
     <div class="row">
     
     <!-- COLUMN 1 Nav Bar-->
     
-        <div class="col-1  first-col">
-    
-                    <h4>Hello!</h4>
-    
-                    <button>Compose</button>
-                   
-                    <p class = 'navList'>Inbox (1)</p>
-                    <p> Tagged</p>
-                    <p>Important</p>
-                    <p>Sent Mail</p>
-                    <p>Drafts</p>
-                    <p>Trash</p>
+        <div class="col-lg-2 col-md-2 p-4 first-col ">
+                <div class="row">
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-image-fill col-2" viewBox="0 0 16 16">
+                            <path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"/>
+                          </svg>
+                        <span class = 'col-12 welcome-text'>Welcome, Fabian!</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col  text-center">
+                        <button type = 'button' class= 'btn btn-lg btn-warning button col-12'>Compose</button>
+                    </div>   
+                </div>
+                    <!-- <ul class = 'nav flex-column navList'>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Inbox (1)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Important</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Sent Mail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Drafts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Trash</a>
+                    </li> -->
+                    <div class="col-10 navList">
+                        <ul>
+                            <li class = 'pt-4 bold-text'><a  href="#">Inbox (1)</a></li>
+                            <li class = 'pt-4'><a  href="#">Important</a></li>
+                            <li class = 'pt-4'><a  href="#">Sent Mail</a></li>
+                            <li class = 'pt-4'><a  href="#">Drafts</a></li>
+                            <li class = 'pt-4'><a  href="#">Trash</a></li>
+                        </ul>
+                    </div>
+                    
         </div>
 
 
-    <!--Row 2 COLUMN 2 EMAILS -->
+    <!--Main Row 2 EMAILS -->
     
 
     
-        <div class="col-5">
-    
+        <div class="col-md-5 col-lg-4 mid-col">
                     <h4>Email</h4>
-                    <input type = 'search' placeholder="Find Email">
-              
+                <div class="input-group">
+                    <span class="input-group-text bg-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width='16' height="16" fill="black" class="bi bi-search " viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                      </span>
+                    <input class = 'form-control' type = 'text' aria-label = 'Input group' placeholder="Search Emails">
+                </div>
     <!-- Col 2 Row 1 Email 1 -->
                     <div class="row">
                         <div class="col emails-list">
@@ -187,26 +267,29 @@
     
                 <!-- COLUMN 3 Viewed Email -->
     
-        <div class="col-6 last-col">
-    
-                    <h4>Cyrus the Great</h4>
-                    <p></p>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Illustrerad_Verldshistoria_band_I_Ill_058.jpg/800px-Illustrerad_Verldshistoria_band_I_Ill_058.jpg" alt="Relief of Cyrus wearing a crown" width='200px;'>
+        <div class="col-md-5 col-lg-6 last-col p-5">
+            <div class="col ">   
+            <span>To: exionite@gmail.com
                     <br>
-                    <p>The details of Cyrus's death are uncertain, with varying accounts throughout history. His burial site is believed to be a limestone tomb, built around 540-530BC. The tomb is located in his former capital city Pasargadae, in modern day Iran.</p>
-                
+                    From: Cyrus@persia.com
+                </span>
+                 </div>
+    
+                    <h4 class = 'email-viewed pt-3'>Cyrus the Great</h4>
+                    <p>Cyrus was the founder of the Achaemenid Empire, the first Persian Empire.</p>
+                    <p>The details of Cyrus's death are uncertain, with varying accounts throughout history. He is believed to be buried in his former capital city of Pasargadae, in modern day Iran. His limestone tomb was built around 540-530BC.  </p>
+                    
+                    <a href="https://en.wikipedia.org/wiki/Cyrus_the_Great" target = '_blank'>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Illustrerad_Verldshistoria_band_I_Ill_058.jpg/800px-Illustrerad_Verldshistoria_band_I_Ill_058.jpg" alt="Relief of Cyrus wearing a crown" width='170px;'>
+                    </a>
                     
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label"></label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Reply"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Reply"></textarea>
                         </div>
-                            <form>
-                                <div class="form-group">
-                                    <label for="formControl"> </label>
-                                    <input type="file" class="form-control-file" id = 'formControl'>
-                                </div>
-                            </form>
                             
+                            
+                    
             </div>
             
     </div>
