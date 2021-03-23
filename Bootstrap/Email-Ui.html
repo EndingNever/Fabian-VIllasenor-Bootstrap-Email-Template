@@ -5,146 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap-practice!</title>
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <style>
-        body {
-            background-color:#F1FAEE;
-            color:black;
-            margin:0;
-            /* border:1px solid green; */
-        }
-        
- 
-
-/* Left Hand Nav Bar */
-        .first-col{
-            background-color: #6d5f4c;
-            color:white;
-
-            /* height:100vh; */
-        }
-    /* Welcome, Fabian! text */
-        .welcome-text {
-            line-height: 10px;
-            font-size:20px;
-        }
-
-        .bold-text {
-            font-weight: 700;
-        }
-
-
-        .navList a {
-            color:inherit;
-            text-decoration: none;
-        }
-
-        .button {
-            background-color: #eeb302;
-            border-color: #eeb302;
-            color:#FFF;   
-            margin-top:50px;
-        }
-
-        .container {
-            /* border:dashed 2px red; */
-/* ///////////////////////////////////////////////Delete height???                             /////////////*/       
-            /* height:100vh; */
-            /* width:100%; */
-        }
-
-
-
-        ul li {
-            list-style-type: none;
-        }
-
-
-
-
-
-
-       .my-row {
-           border:2px solid red;
-           /* height:100vh; */
-       }
-
-       .my-col{
-           border:3px dashed green;
-           /* height:100vh; */
-       }
-
-       .text-form{
-        border:3px dashed green;
-        height:50vh;
-       }
-
-
-/* Middle column and emails */
-
-       /*Search bar and input form */
-        .form-control, .input-group-text {
-            border:inherit;
-            /* background-color: rgba(255, 255, 255, 0.336); */
-        }
-
-        .mid-col {
-            background-color: #ebe7e293;
-        }
-     
-      .emails-list{
-            background-color: rgba(76, 0, 130, 0.274);
-             /* border: 2px solid #6fff00;  */
-            box-shadow:3px 5px rgba(76, 0, 130, 0.664) ;
-            /* width:100%; */
-            /* height:auto; */
-            margin-right:5px;
-            margin-left:3px;
-            margin-top:40px; 
-        } 
-        
-        .email-row {
-           height:auto;
-        }
-
-/* Last column */
-        .last-col{
-            background-color: #ffffff;
-            /* border:2px solid red; */
-        }
-
-        #writingBox {
-            border:1px solid black;
-            height: 300px;
-            margin-top: 200px;
-            margin-left: 50px;
-            width:650px;
-        }
-
-        .email-text {
-         font-size: 80%;  
-        }
-
-        .time {
-            font-style:italic;
-            font-weight: 400;
-        }
-
-        
-        
-        .bi{
-            color:white;
-        }
-
-        .email-info{
-            
-        }
-        
-        .email-viewed{
-
-        }
-  
-    </style>
+<!--Local css  -->
+    <link rel="stylesheet" href="Email.css">
 
 </head>
 <body>
@@ -202,7 +69,7 @@
     
 
     
-        <div class="col-md-5 col-lg-4 mid-col">
+        <div class="col-md-5 col-lg-4 mid-col p-4">
                     <h4>Email</h4>
                 <div class="input-group">
                     <span class="input-group-text bg-white">
@@ -243,7 +110,7 @@
                                     <span class="time">3:22am</span>
                                 </div>
                             </div>
-                            <p class = 'email-text'> Episode 56 - <a href = 'https://www.dancarlin.com/hardcore-history-56-kings-of-kings/'>The King of Kings.</a>
+                            <p class = 'email-text'> Episode 56 - <a href = 'https://www.dancarlin.com/hardcore-history-56-kings-of-kings/' target = '_blank'>The King of Kings.</a>
                                 Often relegated to the role of slavish cannon fodder for Sparta’s spears, the Achaemenid Persian empire had a glorious heritage. Under a single king, Cyrus, they created the greatest empire the world had ever seen.
                             </p>
                         </div>
@@ -267,7 +134,7 @@
     
                 <!-- COLUMN 3 Viewed Email -->
     
-        <div class="col-md-5 col-lg-6 last-col p-5">
+        <div class="col-md-5 col-lg-6 last-col p-4">
             <div class="col ">   
             <span>To: exionite@gmail.com
                     <br>
@@ -283,9 +150,12 @@
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Illustrerad_Verldshistoria_band_I_Ill_058.jpg/800px-Illustrerad_Verldshistoria_band_I_Ill_058.jpg" alt="Relief of Cyrus wearing a crown" width='170px;'>
                     </a>
                     
-                        <div class="mb-3">
+                        <div class="mb-3 col-10">
                             <label for="exampleFormControlTextarea1" class="form-label"></label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Reply"></textarea>
+                            <textarea class="form-control border-0" id="textArea" rows="" placeholder="Reply"></textarea>
+                            <div class="col d-flex button-attach justify-content-end">
+                                <button class = 'btn btn-outline-primary'>Send</button>
+                            </div>
                         </div>
                             
                             
