@@ -1,0 +1,143 @@
+body {
+    background-color:#F1FAEE;
+    color:black;
+    margin:0;
+    /* border:1px solid green; */
+    font-family: 'Roboto', sans-serif; 
+    
+}
+
+
+
+/* Left Hand Nav Bar */
+.first-col{
+    background-color: #6d5f4c;
+    color:white;
+
+    /* height:100vh; */
+}
+/* Welcome, Fabian! text */
+.welcome-text {
+    line-height: 10px;
+    font-size:20px;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+
+.navList a {
+    color:inherit;
+    text-decoration: none;
+}
+
+.button {
+    background-color: #eeb302;
+    border-color: #eeb302;
+    color:#FFF;   
+    margin-top:50px;
+}
+
+.container {
+    /* border:dashed 2px red; */
+/* ///////////////////////////////////////////////Delete height???                             /////////////*/       
+    /* height:100vh; */
+    /* width:100%; */
+}
+
+
+
+ul li {
+    list-style-type: none;
+}
+
+
+
+
+
+
+.my-row {
+   border:2px solid red;
+   /* height:100vh; */
+}
+
+.my-col{
+   border:3px dashed green;
+   /* height:100vh; */
+}
+
+.text-form{
+border:3px dashed green;
+height:50vh;
+}
+
+
+/* Middle column and emails */
+
+/*Search bar and input form */
+.form-control, .input-group-text {
+    border:inherit;
+    /* background-color: rgba(255, 255, 255, 0.336); */
+}
+
+.mid-col {
+    background-color: #c5bdb393;
+}
+
+.emails-list{
+    background-color: rgba(130, 59, 0, 0.274);
+     /* border: 2px solid #6fff00;  */
+    box-shadow:3px 5px rgba(0, 0, 0, 0.459) ;
+    /* width:100%; */
+    /* height:auto; */
+    margin-right:7px;
+    margin-left:5px;
+    margin-top:45px; 
+    margin-bottom: 10px;
+} 
+
+.email-row {
+   height:auto;
+}
+
+/* Last column */
+.last-col{
+    background-color: #f3f3f3;
+    /* border:2px solid red; */
+}
+
+#writingBox {
+    border:1px solid black;
+    height: 300px;
+    margin-top: 200px;
+    margin-left: 50px;
+    width:650px;
+}
+
+.email-text {
+ font-size: 80%;  
+}
+
+.time {
+    font-style:italic;
+    font-weight: 400;
+}
+
+
+
+.bi{
+    color:white;
+}
+
+.form-row {
+    height:500px;
+}
+
+.email-info{
+    
+}
+
+.email-viewed{
+
+}
