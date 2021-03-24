@@ -16,10 +16,12 @@ body {
 
     /* height:100vh; */
 }
+
+
 /* Welcome, Fabian! text */
 .welcome-text {
-    line-height: 10px;
-    font-size:20px;
+    line-height: 12px;
+    font-size:15px;
 }
 
 .bold-text {
@@ -39,12 +41,6 @@ body {
     margin-top:50px;
 }
 
-.container {
-    /* border:dashed 2px red; */
-/* ///////////////////////////////////////////////Delete height???                             /////////////*/       
-    /* height:100vh; */
-    /* width:100%; */
-}
 
 
 
@@ -73,7 +69,7 @@ height:50vh;
 }
 
 
-/* Middle column and emails */
+            /* Middle column and emails */
 
 /*Search bar and input form */
 .form-control, .input-group-text {
@@ -82,28 +78,40 @@ height:50vh;
 }
 
 .mid-col {
-    background-color: #c5bdb393;
+    background-color: #dbd1d193;
 }
 
 .emails-list{
-    background-color: rgba(130, 59, 0, 0.274);
-     /* border: 2px solid #6fff00;  */
-    box-shadow:3px 5px rgba(0, 0, 0, 0.459) ;
-    /* width:100%; */
-    /* height:auto; */
-    margin-right:7px;
-    margin-left:5px;
-    margin-top:45px; 
-    margin-bottom: 10px;
+    background-color: inherit;
+    margin-top:20px;
+    padding: 1rem;
 } 
 
+.emails-list:hover{
+    background-color: white;
+    -webkit-box-shadow: 7px 6px 12px -7px rgba(0, 0, 0, 0.795);
+    -moz-box-shadow: 7px 6px 12px -7px rgba(0,0,0,0.795);
+    box-shadow: 7px 6px 12px -7px rgba(0, 0, 0, 0.795);
+}
+
+.card {
+    border-style: none;
+    
+
+}
+
+h4, h5 {
+    font-weight:bold;
+}
+
 .email-row {
-   height:auto;
+   /* height:auto; */
+
 }
 
 /* Last column */
 .last-col{
-    background-color: #f3f3f3;
+    background-color: #ffffff;
     /* border:2px solid red; */
 }
 
@@ -134,10 +142,6 @@ height:50vh;
     height:500px;
 }
 
-.email-info{
-    
-}
-
-.email-viewed{
-
+.final-text{
+    height:500px;
 }
