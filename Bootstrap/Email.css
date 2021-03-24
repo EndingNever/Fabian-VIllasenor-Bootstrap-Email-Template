@@ -73,7 +73,7 @@ height:50vh;
 
 /*Search bar and input form */
 .form-control, .input-group-text {
-    border:inherit;
+    /* border:inherit; */
     /* background-color: rgba(255, 255, 255, 0.336); */
 }
 
@@ -136,4 +136,8 @@ h4, h5 {
 
 .bi{
     color:white;
+}
+
+.last-btn {
+    margin-top: 5px;
 }
