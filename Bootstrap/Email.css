@@ -146,3 +146,11 @@ h4, h5 {
     color:black;
     width:100px;
 }
+
+textarea{
+    resize:none;
+}
+
+textarea:focus, input:focus{
+    outline:none;
+}
